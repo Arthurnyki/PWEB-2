@@ -1,4 +1,3 @@
-// a. Adicionar uma nova linha à tabela
 document.getElementById('addRowBtn').addEventListener('click', () => {
     const table = document.getElementById('infoTable');
     const newRow = table.insertRow();
@@ -8,8 +7,6 @@ document.getElementById('addRowBtn').addEventListener('click', () => {
     cell2.textContent = '25';
 });
 
-
-// b. Modificar o conteúdo da div
 document.getElementById('updateContentBtn').addEventListener('click', () => {
     const h2 = document.querySelector('#content h2');
     h2.textContent = 'Conteúdo Atualizado';
@@ -21,18 +18,14 @@ document.getElementById('updateContentBtn').addEventListener('click', () => {
     contentDiv.appendChild(newParagraph);
 });
 
-
-// c. Alterar o estilo do link com mouse over
 const myLink = document.getElementById('myLink');
 myLink.addEventListener('mouseover', () => {
     myLink.style.color = 'red';
 });
 myLink.addEventListener('mouseout', () => {
-    myLink.style.color = 'blue'; // Volta ao estilo original
+    myLink.style.color = 'blue'; 
 });
 
-
-// d. Criar um novo nó e adicioná-lo à div
 document.getElementById('addDivBtn').addEventListener('click', () => {
     const newDiv = document.createElement('div');
     newDiv.id = 'newDiv';
@@ -41,8 +34,6 @@ document.getElementById('addDivBtn').addEventListener('click', () => {
     contentDiv.appendChild(newDiv);
 });
 
-
-// e. Remover Parágrafo Original
 document.getElementById('removeParagraphBtn').addEventListener('click', () => {
     const paragraph = document.querySelector('#content p');
     if (paragraph) {
